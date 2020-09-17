@@ -1,0 +1,35 @@
+:root {
+  --color-black: black;
+  --color-white: white;
+  --color-blue: #0071e3;
+  --color-blue-dark: #1d326c;
+  --color-link: #06c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1.47059;
+  letter-spacing: -0.022;
+  background-repeat: no-repeat;
+  color: black;
+  overflow-x: hidden;
+}
