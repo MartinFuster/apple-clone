@@ -1,5 +1,4 @@
 import React from "react";
-import series6 from "../images/watch_series_6_logo_large.png";
 
 function WatchSeries6() {
   return (
@@ -7,7 +6,7 @@ function WatchSeries6() {
       <div className="series-6-container">
         <div className="series-content">
           <figure className="series-6-text-img"></figure>
-          <h4 onselectstart="return false" className="series-6-text">
+          <h4 className="series-6-text">
             Measure your blood oxygen level. Take an ECG anytime, anywhere.
             Easily see your fitness metrics on the enhanced Always‑On Retina
             display.

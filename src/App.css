@@ -50,8 +50,8 @@ body {
   padding: 0; }
 
 .nav-image {
-  filter: brightness(85%);
-  transition: all 0.3s; }
+  filter: brightness(80%);
+  transition: all 0.25s linear; }
   .nav-image:hover {
     cursor: pointer;
     filter: brightness(100%); }
@@ -77,7 +77,8 @@ body {
 .text {
   color: var(--color-white);
   font-size: 1.38rem;
-  font-weight: 400; }
+  font-weight: 400;
+  opacity: 0.94; }
   .text:hover {
     text-decoration: underline;
     cursor: pointer; }
@@ -91,10 +92,6 @@ body {
 
 .cta-bar {
   padding: 1.2rem; }
-
-.text-black {
-  color: var(--text-color-black);
-  font-size: inherit; }
 
 .link {
   color: var(--color-link); }
@@ -143,8 +140,16 @@ body {
   color: var(--color-white);
   min-width: 15rem; }
   .btn-white:hover {
-    color: black;
+    color: var(--color-black);
     background-color: var(--color-white); }
+
+.btn-black {
+  border: 1px var(--color-black) solid;
+  color: rgba(0, 0, 0, 0.94);
+  min-width: 15rem; }
+  .btn-black:hover {
+    color: var(--color-white);
+    background-color: var(--color-black); }
 
 .play-button {
   position: absolute;
@@ -163,6 +168,24 @@ body {
   height: 131px;
   width: 346px;
   background-image: url("./images/watch_series_6_logo_large.png"); }
+
+.series-se-text-img {
+  height: 131px;
+  width: 346px;
+  background-image: url("./images/watch_se_logo_large.png"); }
+
+.fitness-text-img {
+  height: 75px;
+  width: 410px;
+  background-repeat: no-repeat;
+  background-image: url("./images/fitness_plus_logo_large.png"); }
+
+.apple-text-img {
+  height: 50px;
+  width: 150px;
+  margin-bottom: 6rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/ipad_air_logo_large.png"); }
 
 .series-6-text {
   color: var(--text-color-white);
@@ -191,6 +214,45 @@ body {
   background-repeat: no-repeat;
   background-image: url("./images/watch_series_6_hero_large.jpg"); }
 
+.series-se-bg-img {
+  height: 77rem;
+  width: 80rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/watch_se_hero_large.jpg"); }
+
+.fitness-bg-img {
+  height: 128rem;
+  width: 90rem;
+  transform: translateY(-6rem);
+  background-repeat: no-repeat;
+  background-image: url("./images/fitness_plus_hero_large.jpg"); }
+
+.ipad-bg-img {
+  height: 38rem;
+  width: 110.3rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/ipad_air_hero_large.jpg"); }
+
+.text-black {
+  color: var(--text-color-black);
+  opacity: 0.94; }
+
+.title-small {
+  opacity: 0.8; }
+
+.unselectable-text {
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Safari */
+  -khtml-user-select: none;
+  /* Konqueror HTML */
+  -moz-user-select: none;
+  /* Old versions of Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none; }
+
 .app {
   min-height: 100vh;
   min-width: 100vw; }
@@ -199,6 +261,11 @@ body {
   position: relative;
   background-color: var(--color-grey);
   padding: 4rem 0; }
+
+.ipad-air {
+  position: relative;
+  background-color: var(--color-white);
+  padding: 14rem 0; }
 
 .text-container {
   display: flex;
@@ -215,7 +282,14 @@ body {
   display: flex;
   align-items: center;
   background-color: var(--color-black);
-  padding: 4rem 19.5rem 1rem; }
+  padding: 4rem 19.5rem; }
+
+.fitness {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-grey);
+  padding: 6rem 0 0 19rem; }
 
 .series-6-container {
   display: flex;
@@ -227,8 +301,21 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  max-width: 45rem;
+  min-width: 45rem;
   margin-right: 9.5rem; }
+
+.fitness-content {
+  min-width: 48rem; }
+
+.series-se {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-white);
+  padding: 12rem 19.5rem; }
 
 .u-margin-right-sm {
   margin-right: 2rem !important; }
+
+.u-margin-bottom-sm {
+  margin-bottom: 2rem !important; }

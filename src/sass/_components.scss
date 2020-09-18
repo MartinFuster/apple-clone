@@ -19,8 +19,8 @@
 }
 
 .nav-image {
-  filter: brightness(85%);
-  transition: all 0.3s;
+  filter: brightness(80%);
+  transition: all 0.25s linear;
 
   &:hover {
     cursor: pointer;
@@ -55,6 +55,7 @@
   color: var(--color-white);
   font-size: 1.38rem;
   font-weight: 400;
+  opacity: 0.94;
 
   &:hover {
     text-decoration: underline;
@@ -74,11 +75,6 @@
 
 .cta-bar {
   padding: 1.2rem;
-}
-
-.text-black {
-  color: var(--text-color-black);
-  font-size: inherit;
 }
 
 .link {
@@ -140,8 +136,19 @@
   min-width: 15rem;
 
   &:hover {
-    color: black;
+    color: var(--color-black);
     background-color: var(--color-white);
+  }
+}
+
+.btn-black {
+  border: 1px var(--color-black) solid;
+  color: rgba(#0000, 0.94);
+  min-width: 15rem;
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-black);
   }
 }
 
@@ -165,6 +172,27 @@
   height: 131px;
   width: 346px;
   background-image: url("./images/watch_series_6_logo_large.png");
+}
+
+.series-se-text-img {
+  height: 131px;
+  width: 346px;
+  background-image: url("./images/watch_se_logo_large.png");
+}
+
+.fitness-text-img {
+  height: 75px;
+  width: 410px;
+  background-repeat: no-repeat;
+  background-image: url("./images/fitness_plus_logo_large.png");
+}
+
+.apple-text-img {
+  height: 50px;
+  width: 150px;
+  margin-bottom: 6rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/ipad_air_logo_large.png");
 }
 
 .series-6-text {
@@ -191,4 +219,44 @@
   width: 65rem;
   background-repeat: no-repeat;
   background-image: url("./images/watch_series_6_hero_large.jpg");
+}
+
+.series-se-bg-img {
+  height: 77rem;
+  width: 80rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/watch_se_hero_large.jpg");
+}
+
+.fitness-bg-img {
+  height: 128rem;
+  width: 90rem;
+  transform: translateY(-6rem);
+  background-repeat: no-repeat;
+  background-image: url("./images/fitness_plus_hero_large.jpg");
+}
+
+.ipad-bg-img {
+  height: 38rem;
+  width: 110.3rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/ipad_air_hero_large.jpg");
+}
+
+.text-black {
+  color: var(--text-color-black);
+  opacity: 0.94;
+}
+
+.title-small {
+  opacity: 0.8;
+}
+
+.unselectable-text {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
 }
