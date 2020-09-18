@@ -7,6 +7,7 @@
   position: fixed;
   width: 100%;
   background-color: rgba(#000000, 0.8);
+  backdrop-filter: saturate(180%) blur(20px);
   padding: 0;
   max-height: 4.4rem;
   z-index: 9999;
@@ -119,8 +120,8 @@
   border-radius: 10rem;
   font-size: 1.7rem;
   padding: 1.6rem 3.1rem;
-  margin-top: 2.5rem;
-  transition: all 0.3s;
+  margin-top: 2.2rem;
+  transition: all 0.25s linear;
 }
 
 .btn-blue {
@@ -133,13 +134,61 @@
   }
 }
 
+.btn-white {
+  border: 1px var(--color-white) solid;
+  color: var(--color-white);
+  min-width: 15rem;
+
+  &:hover {
+    color: black;
+    background-color: var(--color-white);
+  }
+}
+
 .play-button {
   position: absolute;
   bottom: 4.5%;
   right: 3.5%;
   height: 4rem;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 
   &:hover {
     cursor: pointer;
   }
+}
+
+.series-6-text-img {
+  height: 131px;
+  width: 346px;
+  background-image: url("./images/watch_series_6_logo_large.png");
+}
+
+.series-6-text {
+  color: var(--text-color-white);
+  font-size: 2rem;
+  margin-top: 1.8rem;
+  line-height: 1.4;
+  font-weight: 400;
+  text-align: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none;
+
+  &:hover {
+    cursor: default;
+  }
+}
+
+.series-6-bg-img {
+  height: 94rem;
+  width: 65rem;
+  background-repeat: no-repeat;
+  background-image: url("./images/watch_series_6_hero_large.jpg");
 }

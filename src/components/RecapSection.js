@@ -7,13 +7,13 @@ function RecapSection() {
   const [isPlaying, setIsPlaying] = useState(true);
 
   function handlePlayClick() {
+    setIsPlaying(!isPlaying);
     let video = document.getElementById("video");
     if (video.paused) {
       video.play();
     } else {
       video.pause();
     }
-    setIsPlaying(!isPlaying);
   }
 
   return (

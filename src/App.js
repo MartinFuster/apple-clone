@@ -5,6 +5,7 @@ import CovidBar from "./components/CovidBar";
 import CTABar from "./components/CTABar";
 import HiddenBar from "./components/HiddenBar";
 import RecapSection from "./components/RecapSection";
+import WatchSeries6 from "./components/WatchSeries6";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CovidBar />
       <CTABar />
       <RecapSection />
+      <WatchSeries6 />
     </div>
   );
 }
