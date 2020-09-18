@@ -4,6 +4,8 @@
   --color-blue: #0071e3;
   --color-blue-dark: #1d326c;
   --color-link: #06c;
+  --color-grey: #f4f4f4;
+  --text-color-black: #1d1d1f;
 }
 
 * {
@@ -24,11 +26,11 @@ html {
 }
 
 body {
-  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
-    "Arial", sans-serif;
+  font-family: "SF Pro Display", "Roboto", sans-serif;
   font-weight: 400;
   line-height: 1.47059;
   letter-spacing: -0.022;
+  font-size: 1.4rem;
   background-repeat: no-repeat;
   color: black;
   overflow-x: hidden;
