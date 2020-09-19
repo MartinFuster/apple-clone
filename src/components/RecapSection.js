@@ -25,8 +25,8 @@ function RecapSection() {
         </video>
       </div>
       <div className="text-container">
-        <h1 className="recap-h1">Time for a recap.</h1>
-        <h4 className="recap-h4">
+        <h1 className="recap-h1 unselectable-text">Time for a recap.</h1>
+        <h4 className="recap-h4 unselectable-text">
           Introducing Apple Watch Series 6, Apple Watch SE, Apple Fitness+, the
           new iPad Air and iPad, and Apple One — the all‑new Apple services
           bundle.

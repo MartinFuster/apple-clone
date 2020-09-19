@@ -9,6 +9,9 @@ import WatchSeries6 from "./components/WatchSeries6";
 import WatchSe from "./components/WatchSe";
 import FitnessSection from "./components/FitnessSection";
 import IpadAir from "./components/IpadAir";
+import NewIpad from "./components/NewIpad";
+import OneSection from "./components/OneSection";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -22,6 +25,9 @@ function App() {
       <WatchSe />
       <FitnessSection />
       <IpadAir />
+      <NewIpad />
+      <OneSection />
+      <Footer />
     </div>
   );
 }
