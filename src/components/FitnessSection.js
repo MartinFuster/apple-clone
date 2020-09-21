@@ -17,7 +17,7 @@ function FitnessSection() {
             <button className="btn btn-black">Learn More</button>
           </div>
         </div>
-        <div className="series-6-img">
+        <div className="fitness-img">
           <figure className="fitness-bg-img"></figure>
         </div>
       </div>

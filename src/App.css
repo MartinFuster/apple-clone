@@ -46,10 +46,66 @@ body {
   padding: 0;
   max-height: 4.4rem;
   z-index: 9999; }
+  @media only screen and (max-width: 56.25em) {
+    .navbar {
+      display: none; } }
+
+.navbar-mobile {
+  display: none;
+  padding: 0 1.5rem;
+  transition: all 0.25s linear; }
+  @media only screen and (max-width: 56.25em) {
+    .navbar-mobile {
+      display: flex; } }
+
+.search {
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 0.75rem 3.25rem;
+  background-color: #202020;
+  border: none;
+  outline: none;
+  caret-color: white; }
+  .search::placeholder {
+    font-size: 1.7rem;
+    font-family: "SF Pro Display", "Roboto", sans-serif; }
+
+.search-icon {
+  font-size: 1.3rem;
+  position: absolute;
+  transform: translateX(0.8rem) translateY(-0.1rem);
+  color: #5c5c5c;
+  z-index: 10; }
+
+.br-links {
+  margin: 0 !important; }
+
+.nav-image-extended {
+  height: 5rem;
+  filter: brightness(100%) !important; }
+
+.apple-img-mobile {
+  margin-left: auto;
+  margin-right: auto; }
+
+.nav-hamburger-1 {
+  height: 1px;
+  width: 15px;
+  margin-bottom: 5px;
+  background-color: white;
+  transition: all 0.25s; }
+
+.nav-hamburger-2 {
+  height: 1px;
+  width: 15px;
+  margin-top: 5px;
+  background-color: white;
+  transition: all 0.25s; }
 
 .nav-link {
   color: white;
-  padding: 0; }
+  padding: 0;
+  transition: all 0.25s linear; }
 
 .nav-image {
   filter: brightness(80%);
@@ -236,7 +292,7 @@ body {
 
 .fitness-bg-img {
   height: 128rem;
-  width: 90rem;
+  width: 115rem;
   transform: translateY(-6rem);
   background-repeat: no-repeat;
   background-image: url("./images/fitness_plus_hero_large.jpg"); }
@@ -251,7 +307,6 @@ body {
   height: 92rem;
   width: 92rem;
   object-fit: cover;
-  transform: translateX(-9rem);
   background-repeat: no-repeat;
   background-image: url("./images/ipad_hero_large.jpg"); }
 
@@ -305,7 +360,7 @@ body {
   font-size: 1.25rem;
   margin-bottom: 1rem;
   opacity: 0.98;
-  min-width: 20rem; }
+  min-width: 25rem; }
   .footer-title:hover {
     cursor: default; }
 
@@ -332,6 +387,28 @@ body {
   min-height: 100vh;
   min-width: 100vw; }
 
+.nav-extended {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 0.5rem 0;
+  transition: all 0.35s linear;
+  z-index: 9998; }
+
+.search-section {
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  margin-bottom: 1.5rem;
+  margin-top: 4.4rem;
+  transition: all 0.35s linear; }
+
+.nav-extended-links-section {
+  padding: 0 5rem;
+  transition: all 0.35s linear; }
+
 .recap {
   position: relative;
   background-color: var(--color-grey);
@@ -355,21 +432,21 @@ body {
 .series-6 {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-color: var(--color-black);
   padding: 4rem 19.5rem; }
 
 .new-ipad {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-color: var(--color-white);
   padding: 12rem 19.5rem; }
 
 .fitness {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-color: var(--color-grey);
   padding: 6rem 0 0 19rem; }
 
@@ -384,13 +461,24 @@ body {
   justify-content: center;
   flex-direction: column;
   min-width: 45rem;
+  max-width: 45rem;
   margin-right: 9.5rem; }
 
+.fitness {
+  display: flex;
+  flex-direction: column; }
+
 .fitness-content {
-  min-width: 48rem; }
+  display: flex;
+  min-width: 48rem;
+  max-width: 48rem; }
+
+.fitness-img {
+  margin-left: auto; }
 
 .new-ipad-content {
-  min-width: 39.8rem; }
+  min-width: 39.8rem;
+  max-width: 39.9rem; }
 
 .one-content {
   min-width: 39.8rem;
@@ -399,14 +487,14 @@ body {
 .series-se {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-color: var(--color-white);
   padding: 12rem 19.5rem; }
 
 .one-section {
   position: relative;
   display: flex;
-  align-items: center;
+  justify-content: center;
   background-color: var(--color-grey-light);
   padding: 18rem 19.5rem; }
 

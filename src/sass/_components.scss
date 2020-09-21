@@ -11,11 +11,78 @@
   padding: 0;
   max-height: 4.4rem;
   z-index: 9999;
+
+  @include media(tab) {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  display: none;
+  padding: 0 1.5rem;
+  transition: all 0.25s linear;
+
+  @include media(tab) {
+    display: flex;
+  }
+}
+
+.search {
+  width: 100%;
+  border-radius: 0.75rem;
+  padding: 0.75rem 3.25rem;
+  background-color: rgb(32, 32, 32);
+  border: none;
+  outline: none;
+  caret-color: white;
+
+  &::placeholder {
+    font-size: 1.7rem;
+    font-family: "SF Pro Display", "Roboto", sans-serif;
+  }
+}
+.search-icon {
+  font-size: 1.3rem;
+  position: absolute;
+  transform: translateX(0.8rem) translateY(-0.1rem);
+  color: rgb(92, 92, 92);
+  z-index: 10;
+}
+
+.br-links {
+  margin: 0 !important;
+}
+
+.nav-image-extended {
+  height: 5rem;
+  filter: brightness(100%) !important;
+}
+
+.apple-img-mobile {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-hamburger-1 {
+  height: 1px;
+  width: 15px;
+  margin-bottom: 5px;
+  background-color: white;
+  transition: all 0.25s;
+}
+
+.nav-hamburger-2 {
+  height: 1px;
+  width: 15px;
+  margin-top: 5px;
+  background-color: white;
+  transition: all 0.25s;
 }
 
 .nav-link {
   color: white;
   padding: 0;
+  transition: all 0.25s linear;
 }
 
 .nav-image {
@@ -244,7 +311,7 @@
 
 .fitness-bg-img {
   height: 128rem;
-  width: 90rem;
+  width: 115rem;
   transform: translateY(-6rem);
   background-repeat: no-repeat;
   background-image: url("./images/fitness_plus_hero_large.jpg");
@@ -261,7 +328,6 @@
   height: 92rem;
   width: 92rem;
   object-fit: cover;
-  transform: translateX(-9rem);
   background-repeat: no-repeat;
   background-image: url("./images/ipad_hero_large.jpg");
 }
@@ -319,7 +385,7 @@
   font-size: 1.25rem;
   margin-bottom: 1rem;
   opacity: 0.98;
-  min-width: 20rem;
+  min-width: 25rem;
 
   &:hover {
     cursor: default;
