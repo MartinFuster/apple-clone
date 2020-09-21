@@ -4,7 +4,7 @@ function CTABar() {
   return (
     <div className="cta-bar">
       <div className="content">
-        <div className="text-black">
+        <div className="text-black mobile-text">
           <span className="link">Shop online</span> and get free, no‑contact
           delivery, Specialist help, and more.
         </div>

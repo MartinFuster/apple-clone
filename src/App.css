@@ -141,6 +141,10 @@ body {
     text-decoration: underline;
     cursor: pointer; }
 
+@media only screen and (max-width: 31.25em) {
+  .mobile-text {
+    text-align: center; } }
+
 .chevron-icon {
   color: var(--color-white);
   font-size: 0.9rem;
@@ -164,12 +168,28 @@ body {
 
 .video {
   width: 38rem; }
+  @media only screen and (max-width: 44.375em) {
+    .video {
+      width: 30rem; } }
+  @media only screen and (max-width: 25.9375em) {
+    .video {
+      width: 25rem; } }
 
 .recap-h1 {
   font-size: 7.5rem;
   font-weight: 600;
   margin-top: 3rem;
   color: var(--color-blue-dark); }
+  @media only screen and (max-width: 44.375em) {
+    .recap-h1 {
+      text-align: center;
+      font-size: 5rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .recap-h1 {
+      font-size: 4rem; } }
+  @media only screen and (max-width: 20.9375em) {
+    .recap-h1 {
+      font-size: 3.5rem; } }
 
 .recap-h4 {
   font-size: 2.3rem;
@@ -178,6 +198,21 @@ body {
   max-width: 44%;
   text-align: center;
   color: var(--color-blue-dark); }
+  @media only screen and (max-width: 58.125em) {
+    .recap-h4 {
+      font-size: 1.8rem;
+      max-width: 65%; } }
+  @media only screen and (max-width: 31.25em) {
+    .recap-h4 {
+      font-size: 1.4rem; } }
+  @media only screen and (max-width: 24.375em) {
+    .recap-h4 {
+      font-size: 1.4rem;
+      max-width: 75%; } }
+  @media only screen and (max-width: 20.9375em) {
+    .recap-h4 {
+      font-size: 1.3rem;
+      max-width: 85%; } }
 
 .btn {
   border-radius: 10rem;
@@ -221,6 +256,15 @@ body {
   -ms-user-select: none; }
   .play-button:hover {
     cursor: pointer; }
+  @media only screen and (max-width: 58.125em) {
+    .play-button {
+      bottom: 6%; } }
+  @media only screen and (max-width: 31.25em) {
+    .play-button {
+      bottom: 6.5%; } }
+  @media only screen and (max-width: 25.9375em) {
+    .play-button {
+      bottom: 7.5%; } }
 
 .series-6-text-img {
   height: 131px;

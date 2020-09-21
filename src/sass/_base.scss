@@ -39,6 +39,13 @@
     }
   }
 
+  @if $breakpoint == tab-930 {
+    @media only screen and (max-width: 58.125em) {
+      @content;
+      //930px
+    }
+  }
+
   @if $breakpoint == tab {
     @media only screen and (max-width: 56.25em) {
       @content;
@@ -50,6 +57,13 @@
     @media only screen and (max-width: 49.025em) {
       @content;
       //785px
+    }
+  }
+
+  @if $breakpoint == phone-710 {
+    @media only screen and (max-width: 44.375em) {
+      @content;
+      //710px
     }
   }
 
@@ -88,10 +102,24 @@
     }
   }
 
+  @if $breakpoint == phone-390 {
+    @media only screen and (max-width: 24.375em) {
+      @content;
+      //390px
+    }
+  }
+
   @if $breakpoint == phone-350 {
     @media only screen and (max-width: 21.875em) {
       @content;
       //350px
+    }
+  }
+
+  @if $breakpoint == phone-335 {
+    @media only screen and (max-width: 20.9375em) {
+      @content;
+      //335px
     }
   }
 
