@@ -19,6 +19,13 @@
     }
   }
 
+  @if $breakpoint == desktop-1480 {
+    @media only screen and (max-width: 92.5em) {
+      @content;
+      //1480px
+    }
+  }
+
   @if $breakpoint == desktop-1400 {
     @media only screen and (max-width: 87.5em) {
       @content;

@@ -380,6 +380,12 @@
   width: 243px;
   background-repeat: no-repeat;
   background-image: url("./images/ipad_logo_large.png");
+
+  @include media(phone-448) {
+    background-size: contain;
+    height: 110px;
+    width: 220px;
+  }
 }
 
 .one-text-img {
@@ -528,9 +534,30 @@
 .new-ipad-bg-img {
   height: 92rem;
   width: 92rem;
-  object-fit: cover;
   background-repeat: no-repeat;
   background-image: url("./images/ipad_hero_large.jpg");
+
+  @include media(desktop-1480) {
+    background-size: contain;
+    width: 65rem;
+    height: 70rem;
+  }
+
+  @include media(tab-big) {
+    margin-top: 6rem;
+    width: 45rem;
+    height: 50rem;
+  }
+
+  @include media(phone-medium) {
+    width: 35rem;
+    height: 40rem;
+  }
+
+  @include media(phone-448) {
+    width: 30rem;
+    height: 35rem;
+  }
 }
 
 .one-section-bg-img {

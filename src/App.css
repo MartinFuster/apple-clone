@@ -339,6 +339,11 @@ body {
   width: 243px;
   background-repeat: no-repeat;
   background-image: url("./images/ipad_logo_large.png"); }
+  @media only screen and (max-width: 28em) {
+    .new-ipad-text-img {
+      background-size: contain;
+      height: 110px;
+      width: 220px; } }
 
 .one-text-img {
   height: 76px;
@@ -467,9 +472,26 @@ body {
 .new-ipad-bg-img {
   height: 92rem;
   width: 92rem;
-  object-fit: cover;
   background-repeat: no-repeat;
   background-image: url("./images/ipad_hero_large.jpg"); }
+  @media only screen and (max-width: 92.5em) {
+    .new-ipad-bg-img {
+      background-size: contain;
+      width: 65rem;
+      height: 70rem; } }
+  @media only screen and (max-width: 75.3125em) {
+    .new-ipad-bg-img {
+      margin-top: 6rem;
+      width: 45rem;
+      height: 50rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .new-ipad-bg-img {
+      width: 35rem;
+      height: 40rem; } }
+  @media only screen and (max-width: 28em) {
+    .new-ipad-bg-img {
+      width: 30rem;
+      height: 35rem; } }
 
 .one-section-bg-img {
   height: 38rem;
@@ -606,6 +628,9 @@ body {
   justify-content: center;
   background-color: var(--color-white);
   padding: 12rem 19.5rem; }
+  @media only screen and (max-width: 75.3125em) {
+    .new-ipad {
+      padding: 12rem 0; } }
 
 .fitness {
   position: relative;
@@ -660,6 +685,10 @@ body {
 .new-ipad-content {
   min-width: 39.8rem;
   max-width: 39.9rem; }
+  @media only screen and (max-width: 25.9375em) {
+    .new-ipad-content {
+      min-width: 30rem;
+      max-width: 30rem; } }
 
 .one-content {
   min-width: 39.8rem;
