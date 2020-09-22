@@ -319,6 +319,20 @@ body {
   margin-bottom: 6rem;
   background-repeat: no-repeat;
   background-image: url("./images/ipad_air_logo_large.png"); }
+  @media only screen and (max-width: 49.025em) {
+    .apple-text-img {
+      background-size: contain;
+      height: 35px;
+      width: 100px;
+      margin-bottom: 3rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .apple-text-img {
+      width: 80px;
+      height: 30px; } }
+  @media only screen and (max-width: 24.375em) {
+    .apple-text-img {
+      width: 70px;
+      height: 25px; } }
 
 .new-ipad-text-img {
   height: 120px;
@@ -428,6 +442,27 @@ body {
   width: 110.3rem;
   background-repeat: no-repeat;
   background-image: url("./images/ipad_air_hero_large.jpg"); }
+  @media only screen and (max-width: 75.3125em) {
+    .ipad-bg-img {
+      background-size: contain;
+      width: 75rem;
+      height: 27rem; } }
+  @media only screen and (max-width: 49.025em) {
+    .ipad-bg-img {
+      width: 55rem;
+      height: 18rem; } }
+  @media only screen and (max-width: 37.5em) {
+    .ipad-bg-img {
+      width: 40rem;
+      height: 15rem; } }
+  @media only screen and (max-width: 28em) {
+    .ipad-bg-img {
+      width: 35rem;
+      height: 12rem; } }
+  @media only screen and (max-width: 24.375em) {
+    .ipad-bg-img {
+      width: 30rem;
+      height: 10rem; } }
 
 .new-ipad-bg-img {
   height: 92rem;
