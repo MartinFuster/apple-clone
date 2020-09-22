@@ -88,6 +88,13 @@
     }
   }
 
+  @if $breakpoint == phone-475 {
+    @media only screen and (max-width: 29.687em) {
+      @content;
+      //475px
+    }
+  }
+
   @if $breakpoint == phone-448 {
     @media only screen and (max-width: 28em) {
       @content;

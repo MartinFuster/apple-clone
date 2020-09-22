@@ -235,6 +235,10 @@ body {
   .btn-white:hover {
     color: var(--color-black);
     background-color: var(--color-white); }
+  @media only screen and (max-width: 24.375em) {
+    .btn-white {
+      min-width: 10rem;
+      font-size: 1.3rem; } }
 
 .btn-black {
   border: 1px var(--color-black) solid;
@@ -269,7 +273,16 @@ body {
 .series-6-text-img {
   height: 131px;
   width: 346px;
+  background-repeat: no-repeat;
   background-image: url("./images/watch_series_6_logo_large.png"); }
+  @media only screen and (max-width: 29.687em) {
+    .series-6-text-img {
+      width: 310px;
+      background-size: contain; } }
+  @media only screen and (max-width: 24.375em) {
+    .series-6-text-img {
+      width: 240px;
+      height: 100px; } }
 
 .series-se-text-img {
   height: 131px;
@@ -321,12 +334,21 @@ body {
   user-select: none; }
   .series-6-text:hover {
     cursor: default; }
+  @media only screen and (max-width: 29.687em) {
+    .series-6-text {
+      font-size: 1.6rem; } }
 
 .series-6-bg-img {
   height: 94rem;
   width: 65rem;
   background-repeat: no-repeat;
   background-image: url("./images/watch_series_6_hero_large.jpg"); }
+  @media only screen and (max-width: 75.3125em) {
+    .series-6-bg-img {
+      background-size: contain;
+      width: 28rem;
+      height: 40rem;
+      margin-top: 6rem; } }
 
 .series-se-bg-img {
   height: 77rem;
@@ -479,6 +501,9 @@ body {
   justify-content: center;
   background-color: var(--color-black);
   padding: 4rem 19.5rem; }
+  @media only screen and (max-width: 24.375em) {
+    .series-6 {
+      padding: 4rem 0; } }
 
 .new-ipad {
   position: relative;
@@ -498,6 +523,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 75.3125em) {
+    .series-6-container {
+      flex-direction: column; } }
 
 .series-content {
   display: flex;
@@ -507,6 +535,13 @@ body {
   min-width: 45rem;
   max-width: 45rem;
   margin-right: 9.5rem; }
+  @media only screen and (max-width: 75.3125em) {
+    .series-content {
+      margin-right: 0; } }
+  @media only screen and (max-width: 29.687em) {
+    .series-content {
+      min-width: 30rem;
+      max-width: 30rem; } }
 
 .fitness {
   display: flex;

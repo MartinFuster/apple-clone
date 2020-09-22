@@ -58,6 +58,10 @@
   justify-content: center;
   background-color: var(--color-black);
   padding: 4rem 19.5rem;
+
+  @include media(phone-390) {
+    padding: 4rem 0;
+  }
 }
 
 .new-ipad {
@@ -80,6 +84,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include media(tab-big) {
+    flex-direction: column;
+  }
 }
 
 .series-content {
@@ -90,6 +98,15 @@
   min-width: 45rem;
   max-width: 45rem;
   margin-right: 9.5rem;
+
+  @include media(tab-big) {
+    margin-right: 0;
+  }
+
+  @include media(phone-475) {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
 }
 
 .fitness {

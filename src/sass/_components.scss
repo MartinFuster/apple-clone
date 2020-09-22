@@ -252,6 +252,11 @@
     color: var(--color-black);
     background-color: var(--color-white);
   }
+
+  @include media(phone-390) {
+    min-width: 10rem;
+    font-size: 1.3rem;
+  }
 }
 
 .btn-black {
@@ -296,7 +301,18 @@
 .series-6-text-img {
   height: 131px;
   width: 346px;
+  background-repeat: no-repeat;
   background-image: url("./images/watch_series_6_logo_large.png");
+
+  @include media(phone-475) {
+    width: 310px;
+    background-size: contain;
+  }
+
+  @include media(phone-390) {
+    width: 240px;
+    height: 100px;
+  }
 }
 
 .series-se-text-img {
@@ -351,6 +367,10 @@
   &:hover {
     cursor: default;
   }
+
+  @include media(phone-475) {
+    font-size: 1.6rem;
+  }
 }
 
 .series-6-bg-img {
@@ -358,6 +378,13 @@
   width: 65rem;
   background-repeat: no-repeat;
   background-image: url("./images/watch_series_6_hero_large.jpg");
+
+  @include media(tab-big) {
+    background-size: contain;
+    width: 28rem;
+    height: 40rem;
+    margin-top: 6rem;
+  }
 }
 
 .series-se-bg-img {
