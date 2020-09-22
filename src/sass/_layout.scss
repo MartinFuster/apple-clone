@@ -78,6 +78,10 @@
   justify-content: center;
   background-color: var(--color-grey);
   padding: 6rem 0 0 19rem;
+
+  @include media(tab-big) {
+    padding: 6rem 0;
+  }
 }
 
 .series-6-container {
@@ -109,19 +113,24 @@
   }
 }
 
-.fitness {
-  display: flex;
-  flex-direction: column;
-}
-
 .fitness-content {
   display: flex;
   min-width: 48rem;
   max-width: 48rem;
+
+  @include media(phone-475) {
+    transform: translateY(0);
+    min-width: 30rem;
+    max-width: 30rem;
+  }
 }
 
 .fitness-img {
   margin-left: auto;
+
+  @include media(tab-big) {
+    margin-left: 0;
+  }
 }
 
 .new-ipad-content {

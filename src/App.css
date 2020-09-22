@@ -304,6 +304,14 @@ body {
   width: 410px;
   background-repeat: no-repeat;
   background-image: url("./images/fitness_plus_logo_large.png"); }
+  @media only screen and (max-width: 42.8125em) {
+    .fitness-text-img {
+      background-size: contain;
+      width: 340px; } }
+  @media only screen and (max-width: 24.375em) {
+    .fitness-text-img {
+      width: 280px;
+      height: 55px; } }
 
 .apple-text-img {
   height: 50px;
@@ -365,7 +373,7 @@ body {
   width: 80rem;
   background-repeat: no-repeat;
   background-image: url("./images/watch_se_hero_large.jpg"); }
-  @media only screen and (max-width: 787.5em) {
+  @media only screen and (max-width: 87.5em) {
     .series-se-bg-img {
       background-size: contain;
       width: 60rem;
@@ -390,6 +398,30 @@ body {
   transform: translateY(-6rem);
   background-repeat: no-repeat;
   background-image: url("./images/fitness_plus_hero_large.jpg"); }
+  @media only screen and (max-width: 100em) {
+    .fitness-bg-img {
+      background-size: contain;
+      width: 100rem;
+      height: 100rem; } }
+  @media only screen and (max-width: 87.5em) {
+    .fitness-bg-img {
+      width: 80rem;
+      height: 60rem; } }
+  @media only screen and (max-width: 75.3125em) {
+    .fitness-bg-img {
+      transform: translateY(0);
+      margin-top: 6rem;
+      width: 55rem;
+      height: 50rem; } }
+  @media only screen and (max-width: 42.8125em) {
+    .fitness-bg-img {
+      transform: translateY(0);
+      width: 35rem;
+      height: 35rem; } }
+  @media only screen and (max-width: 24.375em) {
+    .fitness-bg-img {
+      width: 30rem;
+      height: 30rem; } }
 
 .ipad-bg-img {
   height: 38rem;
@@ -546,6 +578,9 @@ body {
   justify-content: center;
   background-color: var(--color-grey);
   padding: 6rem 0 0 19rem; }
+  @media only screen and (max-width: 75.3125em) {
+    .fitness {
+      padding: 6rem 0; } }
 
 .series-6-container {
   display: flex;
@@ -571,17 +606,21 @@ body {
       min-width: 30rem;
       max-width: 30rem; } }
 
-.fitness {
-  display: flex;
-  flex-direction: column; }
-
 .fitness-content {
   display: flex;
   min-width: 48rem;
   max-width: 48rem; }
+  @media only screen and (max-width: 29.687em) {
+    .fitness-content {
+      transform: translateY(0);
+      min-width: 30rem;
+      max-width: 30rem; } }
 
 .fitness-img {
   margin-left: auto; }
+  @media only screen and (max-width: 75.3125em) {
+    .fitness-img {
+      margin-left: 0; } }
 
 .new-ipad-content {
   min-width: 39.8rem;

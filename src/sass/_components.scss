@@ -338,6 +338,16 @@
   width: 410px;
   background-repeat: no-repeat;
   background-image: url("./images/fitness_plus_logo_large.png");
+
+  @include media(phone-big) {
+    background-size: contain;
+    width: 340px;
+  }
+
+  @include media(phone-390) {
+    width: 280px;
+    height: 55px;
+  }
 }
 
 .apple-text-img {
@@ -434,6 +444,35 @@
   transform: translateY(-6rem);
   background-repeat: no-repeat;
   background-image: url("./images/fitness_plus_hero_large.jpg");
+
+  @include media(desktop-1600) {
+    background-size: contain;
+    width: 100rem;
+    height: 100rem;
+  }
+
+  @include media(desktop-1400) {
+    width: 80rem;
+    height: 60rem;
+  }
+
+  @include media(tab-big) {
+    transform: translateY(0);
+    margin-top: 6rem;
+    width: 55rem;
+    height: 50rem;
+  }
+
+  @include media(phone-big) {
+    transform: translateY(0);
+    width: 35rem;
+    height: 35rem;
+  }
+
+  @include media(phone-390) {
+    width: 30rem;
+    height: 30rem;
+  }
 }
 
 .ipad-bg-img {
