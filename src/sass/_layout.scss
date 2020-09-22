@@ -150,6 +150,11 @@
 .one-content {
   min-width: 39.8rem;
   max-width: 39.8rem;
+
+  @include media(phone-415) {
+    min-width: 30rem;
+    max-width: 30rem;
+  }
 }
 
 .series-se {
@@ -170,6 +175,10 @@
   justify-content: center;
   background-color: var(--color-grey-light);
   padding: 18rem 19.5rem;
+
+  @include media(tab-big) {
+    padding: 18rem 0;
+  }
 }
 
 .footer {

@@ -350,6 +350,11 @@ body {
   width: 243px;
   background-repeat: no-repeat;
   background-image: url("./images/apple_one_logo_large.png"); }
+  @media only screen and (max-width: 28em) {
+    .one-text-img {
+      background-size: contain;
+      height: 70px;
+      width: 200px; } }
 
 .series-6-text {
   color: var(--text-color-white);
@@ -499,6 +504,24 @@ body {
   transform: translateY(2rem);
   background-repeat: no-repeat;
   background-image: url("./images/apple_one_hero_large.jpg"); }
+  @media only screen and (max-width: 75.3125em) {
+    .one-section-bg-img {
+      background-size: contain;
+      transform: translateY(0);
+      transform: translateX(3rem);
+      margin-top: 6rem;
+      height: 30rem;
+      width: 50rem; } }
+  @media only screen and (max-width: 29.687em) {
+    .one-section-bg-img {
+      transform: translateX(2.5rem);
+      height: 25rem;
+      width: 35rem; } }
+  @media only screen and (max-width: 24.375em) {
+    .one-section-bg-img {
+      transform: translateX(2.3rem);
+      height: 18rem;
+      width: 30rem; } }
 
 .text-black {
   color: var(--text-color-black);
@@ -693,6 +716,10 @@ body {
 .one-content {
   min-width: 39.8rem;
   max-width: 39.8rem; }
+  @media only screen and (max-width: 25.9375em) {
+    .one-content {
+      min-width: 30rem;
+      max-width: 30rem; } }
 
 .series-se {
   position: relative;
@@ -710,6 +737,9 @@ body {
   justify-content: center;
   background-color: var(--color-grey-light);
   padding: 18rem 19.5rem; }
+  @media only screen and (max-width: 75.3125em) {
+    .one-section {
+      padding: 18rem 0; } }
 
 .footer {
   padding: 2rem 30rem;

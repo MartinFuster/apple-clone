@@ -393,6 +393,12 @@
   width: 243px;
   background-repeat: no-repeat;
   background-image: url("./images/apple_one_logo_large.png");
+
+  @include media(phone-448) {
+    background-size: contain;
+    height: 70px;
+    width: 200px;
+  }
 }
 
 .series-6-text {
@@ -566,6 +572,27 @@
   transform: translateY(2rem);
   background-repeat: no-repeat;
   background-image: url("./images/apple_one_hero_large.jpg");
+
+  @include media(tab-big) {
+    background-size: contain;
+    transform: translateY(0);
+    transform: translateX(3rem);
+    margin-top: 6rem;
+    height: 30rem;
+    width: 50rem;
+  }
+
+  @include media(phone-475) {
+    transform: translateX(2.5rem);
+    height: 25rem;
+    width: 35rem;
+  }
+
+  @include media(phone-390) {
+    transform: translateX(2.3rem);
+    height: 18rem;
+    width: 30rem;
+  }
 }
 
 .text-black {
