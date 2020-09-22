@@ -12,6 +12,13 @@
 }
 
 @mixin media($breakpoint) {
+  @if $breakpoint == desktop-1400 {
+    @media only screen and (max-width: 787.5em) {
+      @content;
+      //1400px
+    }
+  }
+
   @if $breakpoint == tab-big {
     @media only screen and (max-width: 75.3125em) {
       @content;

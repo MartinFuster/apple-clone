@@ -140,6 +140,10 @@
   justify-content: center;
   background-color: var(--color-white);
   padding: 12rem 19.5rem;
+
+  @include media(phone-390) {
+    padding: 12rem 0;
+  }
 }
 
 .one-section {

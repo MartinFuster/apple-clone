@@ -247,6 +247,10 @@ body {
   .btn-black:hover {
     color: var(--color-white);
     background-color: var(--color-black); }
+  @media only screen and (max-width: 24.375em) {
+    .btn-black {
+      min-width: 10rem;
+      font-size: 1.3rem; } }
 
 .play-button {
   position: absolute;
@@ -287,7 +291,13 @@ body {
 .series-se-text-img {
   height: 131px;
   width: 346px;
+  background-repeat: no-repeat;
   background-image: url("./images/watch_se_logo_large.png"); }
+  @media only screen and (max-width: 24.375em) {
+    .series-se-text-img {
+      background-size: contain;
+      width: 240px;
+      height: 100px; } }
 
 .fitness-text-img {
   height: 75px;
@@ -355,6 +365,24 @@ body {
   width: 80rem;
   background-repeat: no-repeat;
   background-image: url("./images/watch_se_hero_large.jpg"); }
+  @media only screen and (max-width: 787.5em) {
+    .series-se-bg-img {
+      background-size: contain;
+      width: 60rem;
+      height: 60rem; } }
+  @media only screen and (max-width: 75.3125em) {
+    .series-se-bg-img {
+      width: 40rem;
+      height: 40rem;
+      margin-top: 6rem; } }
+  @media only screen and (max-width: 31.25em) {
+    .series-se-bg-img {
+      width: 35rem;
+      height: 35rem; } }
+  @media only screen and (max-width: 24.375em) {
+    .series-se-bg-img {
+      width: 30rem;
+      height: 30rem; } }
 
 .fitness-bg-img {
   height: 128rem;
@@ -569,6 +597,9 @@ body {
   justify-content: center;
   background-color: var(--color-white);
   padding: 12rem 19.5rem; }
+  @media only screen and (max-width: 24.375em) {
+    .series-se {
+      padding: 12rem 0; } }
 
 .one-section {
   position: relative;
