@@ -574,6 +574,15 @@ body {
   color: black; }
   .footer-title:hover {
     cursor: default; }
+  @media only screen and (min-width: 125em) {
+    .footer-title {
+      min-width: 30rem; } }
+  @media only screen and (min-width: 143.75em) {
+    .footer-title {
+      min-width: 40rem; } }
+  @media only screen and (min-width: 175em) {
+    .footer-title {
+      min-width: 50rem; } }
   @media only screen and (max-width: 107.5em) {
     .footer-title {
       min-width: 20rem; } }

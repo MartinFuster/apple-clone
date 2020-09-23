@@ -192,6 +192,13 @@
       //2300px
     }
   }
+
+  @if $breakpoint == desktop-2800 {
+    @media only screen and (min-width: 175em) {
+      @content;
+      //2300px
+    }
+  }
 }
 
 * {

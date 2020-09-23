@@ -652,6 +652,17 @@
     cursor: default;
   }
 
+  @include media(desktop-2000) {
+    min-width: 30rem;
+  }
+  @include media(big-desktop) {
+    min-width: 40rem;
+  }
+
+  @include media(desktop-2800) {
+    min-width: 50rem;
+  }
+
   @include media(desktop-1720) {
     min-width: 20rem;
   }
