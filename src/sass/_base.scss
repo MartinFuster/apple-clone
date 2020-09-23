@@ -12,10 +12,24 @@
 }
 
 @mixin media($breakpoint) {
+  @if $breakpoint == desktop-1720 {
+    @media only screen and (max-width: 107.5em) {
+      @content;
+      //1720px
+    }
+  }
+
   @if $breakpoint == desktop-1600 {
     @media only screen and (max-width: 100em) {
       @content;
       //1600px
+    }
+  }
+
+  @if $breakpoint == desktop-1528 {
+    @media only screen and (max-width: 95.5em) {
+      @content;
+      //1528px
     }
   }
 
@@ -71,6 +85,13 @@
     @media only screen and (max-width: 56.25em) {
       @content;
       //900px
+    }
+  }
+
+  @if $breakpoint == tab-850 {
+    @media only screen and (max-width: 53.125em) {
+      @content;
+      //850px
     }
   }
 
@@ -155,6 +176,13 @@
     @media only screen and (min-width: 112.5em) {
       @content;
       //1800px
+    }
+  }
+
+  @if $breakpoint == desktop-2000 {
+    @media only screen and (min-width: 125em) {
+      @content;
+      //2300px
     }
   }
 

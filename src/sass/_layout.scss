@@ -184,6 +184,23 @@
 .footer {
   padding: 2rem 30rem;
   background-color: var(--color-grey);
+  @include media(tab-big) {
+    padding: 2rem;
+  }
+
+  @include media(tab-850) {
+    display: none;
+  }
+}
+
+.footer-mobile {
+  display: none;
+  padding: 2rem;
+  background-color: var(--color-grey);
+
+  @include media(tab-850) {
+    display: block;
+  }
 }
 
 .footer-column {
@@ -199,4 +216,26 @@
 .lower-footer {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
+}
+
+.link-section-mobile {
+  display: flex;
+  align-items: center;
+}
+
+.link-section-extended {
+  display: none;
+  margin-left: 1.5rem;
+  opacity: 0;
+  transform: translateY(-4rem);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  transition: all 0.2s linear;
+}
+
+.clickable-section {
+  position: relative;
+  padding-bottom: 0;
+  transition: all 0.1s linear;
 }
