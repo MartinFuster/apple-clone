@@ -222,6 +222,22 @@ body {
 .video {
   width: 38rem;
 }
+
+/* Old shadow dom for play button */
+*::-webkit-media-controls-play-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
+/* New shadow dom for play button */
+
+/* This one works! */
+
+*::-webkit-media-controls-start-playback-button {
+  display: none!important;
+  -webkit-appearance: none;
+}
+
 @media only screen and (max-width: 44.375em) {
   .video {
     width: 30rem;
