@@ -19,7 +19,7 @@ function RecapSection() {
   return (
     <section className="recap">
       <div className="video-container">
-        <video id="video" autoPlay muted loop className="video">
+        <video id="video" autoPlay muted loop playsInline className="video">
           <source src={Video} type="video/mp4" />
           Your browser does not support HTML video.
         </video>
